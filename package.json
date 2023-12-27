@@ -4,6 +4,8 @@
   "description": "Learnings from Namaste React by Akshay Saini",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
