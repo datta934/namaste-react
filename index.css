@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 50px;
+    padding: 20px;
+}
+.nav-items li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+.rest-card{
+    width: 200px;
+    height: 400px;
+    border: 2px solid gray;
+    padding: 2px;
+}

@@ -23,3 +23,9 @@ This repo includes all learning from Namaste React
 5. React with JSX
 6. Class vs Functional Component
 
+### Episode 4 Talk is Cheap, Show me the code - 2.14
+1. Food ordering app
+2. Props; Pass data in props; Destructuring complex data
+3. JSON
+4. Cloudinary
+5. using map to iterate data; key
