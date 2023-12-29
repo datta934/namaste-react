@@ -29,3 +29,17 @@ This repo includes all learning from Namaste React
 3. JSON
 4. Cloudinary
 5. using map to iterate data; key
+
+### Episode 5 Let's get hooked - 2.09
+1. Folder structure and clean up the code
+2. File formats? Js/jsx/tsx
+3. import (types of import), export
+4. Event handlers
+5. React hooks - useState
+6. Why is react fast? 
+    - VirtualDOM
+    - Reconciliation Algo
+    - React Fiber
+    - React Fiber Architecture
+    - Incremental Rendering
+
