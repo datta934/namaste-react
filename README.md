@@ -43,3 +43,18 @@ This repo includes all learning from Namaste React
     - React Fiber Architecture
     - Incremental Rendering
 
+
+### Episode 6 Exploring the world - 2.22
+1. Monolith architecture
+2. Microservice architecture
+3. Two approaches to fetch data from BE
+4. Hook - useEffect()
+5. fetch() - given by browers which JS engine has
+6. CORS and using swiggy API
+7. Loader and shimmer
+8. Why to use state? Scenerio - Login/Logout
+9. How const is working to toggle Login/Logout text? Because component re-renders with new value in state.
+
+
+
+12.52 hrs

@@ -1,6 +1,6 @@
 const resObj = [
   {
-    data: {
+    info: {
       id: "243625",
       name: "KFC",
       cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
@@ -52,7 +52,7 @@ const resObj = [
     },
   },
   {
-    data: {
+    info: {
       id: "24424",
       name: "Domino's Pizza",
       cloudinaryImageId: "bupr3trnn0y3v7w3foyh",
@@ -105,7 +105,7 @@ const resObj = [
     },
   },
   {
-    data: {
+    info: {
       id: "21001",
       name: "Pizza Hut",
       cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
