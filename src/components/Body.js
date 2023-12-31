@@ -2,10 +2,11 @@ import RestaurantCard from "./Restaurant";
 import resObj from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 const Body = () => {
   //State variable
   const [listofRestaurants, setListofRestaurant] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurant]  = useState([]);
+  const [filteredRestaurants, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
@@ -22,7 +23,9 @@ const Body = () => {
     setListofRestaurant(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setFilteredRestaurant(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
   // if (listofRestaurants.length === 0) {
@@ -41,10 +44,16 @@ const Body = () => {
             setSearchText(e.target.value.toLowerCase());
           }}
         ></input>
-        <button onClick={()=>{
-          const filteredList = listofRestaurants.filter((res)=> res.info.name.toLowerCase().includes(searchText))
-          setFilteredRestaurant(filteredList);
-        }}>Search</button>
+        <button
+          onClick={() => {
+            const filteredList = listofRestaurants.filter((res) =>
+              res.info.name.toLowerCase().includes(searchText)
+            );
+            setFilteredRestaurant(filteredList);
+          }}
+        >
+          Search
+        </button>
         <button
           type="button"
           className="filter-btn"
@@ -60,7 +69,9 @@ const Body = () => {
       </div>
       <div className="rest-container">
         {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard resData={restaurant} key={restaurant.info.id} />
+          <Link to={"/restaurants/" + restaurant.info.id}>
+            <RestaurantCard resData={restaurant} key={restaurant.info.id} />
+          </Link>
         ))}
       </div>
     </div>

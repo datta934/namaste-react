@@ -54,7 +54,20 @@ This repo includes all learning from Namaste React
 7. Loader and shimmer
 8. Why to use state? Scenerio - Login/Logout
 9. How const is working to toggle Login/Logout text? Because component re-renders with new value in state.
+10. Search and Filter at FE
 
+### Episode 6.1 - SwiggyAPI resolve- 45mins
+### Episode 6.2 - CORS resolve - 5mins - CORS proxy IO
 
+### Episode 7 Finding the path - 2.18
+1. useEffect with dependency array
+2. Routing, Children Routes - react-router-dom 
+    - createBrowserReact
+    - path, element, errorElement
+    - useRouteError
+    - Outlet
+    - Link
+3. Dynamic Routing
+    - useParams
 
-12.52 hrs
+16:00 hrs
