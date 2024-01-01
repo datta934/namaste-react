@@ -70,7 +70,7 @@ This repo includes all learning from Namaste React
 3. Dynamic Routing
     - useParams
 
-### Episode 8 Let's Get Classy 2.46
+### Episode 8 Let's Get Classy - 2.46
 1. Class based components - The older way
 2. Props, State, Update state
 3. What if parent component is also class component
@@ -87,6 +87,13 @@ This repo includes all learning from Namaste React
 5. Component life cycle - Render and Commit phase
 6. How to make an API call in class component - async, await, fetch
 
+### Episode 9 Optimizing our App - 1.38
+1. Hooks - utility function
+2. Custom hooks - Custom hook for menu
+3. Online offline hook
+4. App Chunking, Code splitting, Lazy loading, Dynamic bundling 
+5. lazy()
+6. Suspense
 
 
-18:46 hrs
+20:24 hrs

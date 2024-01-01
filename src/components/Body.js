@@ -3,6 +3,7 @@ import resObj from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   //State variable
   const [listofRestaurants, setListofRestaurant] = useState([]);
@@ -31,6 +32,11 @@ const Body = () => {
   // if (listofRestaurants.length === 0) {
   //   return <Shimmer />;
   // }
+
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false) {
+    return <div>You are offline!</div>;
+  }
   return listofRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
