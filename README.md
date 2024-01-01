@@ -95,5 +95,9 @@ This repo includes all learning from Namaste React
 5. lazy()
 6. Suspense
 
+### Episode-10 Jo Dikhta Hai, Vo Bikta Hai - 1.37
+1. Styled components
+2. Tailwind - (Not including in the repo)
+3. Tailwind with parcel
 
-20:24 hrs
+21:01 hrs
