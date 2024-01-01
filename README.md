@@ -70,4 +70,23 @@ This repo includes all learning from Namaste React
 3. Dynamic Routing
     - useParams
 
-16:00 hrs
+### Episode 8 Let's Get Classy 2.46
+1. Class based components - The older way
+2. Props, State, Update state
+3. What if parent component is also class component
+4. Methods:
+    - constructor
+    - render
+    - componentDidMount()
+        - First child then parent 
+        - Usage: to make API Calls
+    - componenentDidUpdate()
+    - componentWillUnmount()
+        - About to be unmount
+        - once you move from current component
+5. Component life cycle - Render and Commit phase
+6. How to make an API call in class component - async, await, fetch
+
+
+
+18:46 hrs
