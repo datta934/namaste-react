@@ -103,9 +103,12 @@ This repo includes all learning from Namaste React
 ### Episode 11 Data is the new oil - 3.07
 1. Higher Order Components (HOC) - function takes a component and returns a component. A normal js function
 2. UI and Data layer
-3. 
-Controlled and uncontrolled components
-
-
+3. Lifting state up
+4. React Context: 
+    - createContext, useContext, 
+    - {file}.Consumer for class based component
+    - {file}.Provider to modify value of context
+{file} - My context file
+5. How to change context value?
 
 24:07 hrs

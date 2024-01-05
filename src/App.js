@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./../index.css";
 import Header from "./components/Header";
@@ -8,13 +8,28 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
-const Contact = lazy(()=> import("./components/Contact"))
+import UserContext from "./utils/UserContext";
+import { useState, useEffect } from "react";
+const Contact = lazy(() => import("./components/Contact"));
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+
+  //authentication
+  useEffect(() => {
+    // Make an API call and send username and password
+    const data = {
+      name: "MD",
+    };
+    setUserName(data.name);
+  }, []);
+
   return (
-    <div className="app">
-      <Header />
-      <Outlet></Outlet>
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
@@ -33,7 +48,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Suspense fallback={<h1>Loading</h1>}><Contact /></Suspense>,
+        element: (
+          <Suspense fallback={<h1>Loading</h1>}>
+            <Contact />
+          </Suspense>
+        ),
       },
       {
         path: "/restaurants/:resId",
