@@ -95,9 +95,17 @@ This repo includes all learning from Namaste React
 5. lazy()
 6. Suspense
 
-### Episode-10 Jo Dikhta Hai, Vo Bikta Hai - 1.37
+### Episode 10 Jo Dikhta Hai, Vo Bikta Hai - 1.37
 1. Styled components
 2. Tailwind - (Not including in the repo)
 3. Tailwind with parcel
 
-21:01 hrs
+### Episode 11 Data is the new oil - 3.07
+1. Higher Order Components (HOC) - function takes a component and returns a component. A normal js function
+2. UI and Data layer
+3. 
+Controlled and uncontrolled components
+
+
+
+24:07 hrs

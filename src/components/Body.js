@@ -1,4 +1,4 @@
-import RestaurantCard from "./Restaurant";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import resObj from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -9,7 +9,7 @@ const Body = () => {
   const [listofRestaurants, setListofRestaurant] = useState([]);
   const [filteredRestaurants, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
-
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   useEffect(() => {
     console.log("useEffect Called");
     fetchData();
@@ -20,12 +20,13 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
+    console.log(json)
     //Optional chaining
     setListofRestaurant(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurant(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -37,7 +38,7 @@ const Body = () => {
   if (onlineStatus === false) {
     return <div>You are offline!</div>;
   }
-  return listofRestaurants.length === 0 ? (
+  return listofRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -74,9 +75,13 @@ const Body = () => {
         </button>
       </div>
       <div className="rest-container">
-        {filteredRestaurants.map((restaurant) => (
-          <Link to={"/restaurants/" + restaurant.info.id}>
-            <RestaurantCard resData={restaurant} key={restaurant.info.id} />
+        {filteredRestaurants?.map((restaurant) => (
+          <Link to={"/restaurants/" + restaurant.info.id} key={restaurant.info.id}>
+            {restaurant.info.veg ? (
+              <RestaurantCardPromoted resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
