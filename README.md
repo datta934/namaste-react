@@ -124,4 +124,20 @@ This repo includes all learning from Namaste React
 4. Comparison of how state worked in vanilla redux
 5. immer js - Redux uses this
 
-26:47 hrs
+### Episode 13 Time to test - 4.08
+1. Types of testing
+2. React Testing Library
+3. Setting up Testing in our app
+ - Install React Testing Library
+ - Installed jest
+ - Installed Babel dependencies
+ - Configure Babel 
+ - Configure Parcel Config file to disable default babel transpilation 
+ - Jest  - npx jest --init
+ - Install jsdom library
+ - Install @babel/preset-react - to make JSX work in test cases
+ - Include @babel/preset-react inside my babel config
+ - npm i -D @testing-library/jest-dom
+4. Writing test cases (Copied from the original repo)
+
+30:54 hrs
