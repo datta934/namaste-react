@@ -111,4 +111,17 @@ This repo includes all learning from Namaste React
 {file} - My context file
 5. How to change context value?
 
-24:07 hrs
+### Episode 12 Let's build our store - 2.40
+1. Redux, Redux Toolkit and React Redux and Zustand 
+2. State management: Action, Reducer, Selector, Subscribe to store
+3. Implementation
+    - const appStore = configureStore();
+    - Provider
+    - createSlice
+    - export actions and reducers
+    - useSelector
+    - useDispatch
+4. Comparison of how state worked in vanilla redux
+5. immer js - Redux uses this
+
+26:47 hrs
