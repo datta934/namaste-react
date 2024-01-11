@@ -140,4 +140,17 @@ This repo includes all learning from Namaste React
  - npm i -D @testing-library/jest-dom
 4. Writing test cases (Copied from the original repo)
 
-30:54 hrs
+### Episode 14 NetflixGPT - The beginning - 3.55
+1. Without Parcel -> create-react-app, explore bundler like vite
+2. Formik - When large forms
+3. Form validation
+4. useRef
+
+
+
+### Bonus Extra - 13.10
+1. Personal Branding - 3.09
+2. LinkedIn Class - 3.26
+3. Resume, Interview, Salary Negotiation - 3.35
+
+13 & bonus extra: 43:04 hrs
