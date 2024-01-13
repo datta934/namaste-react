@@ -145,6 +145,9 @@ This repo includes all learning from Namaste React
 2. Formik - When large forms
 3. Form validation
 4. useRef
+5. Firebase - Sign in sign up
+6. navigate, useNavigate
+7. Using diff firebase APIs to show name, url etc
 
 
 
@@ -153,4 +156,4 @@ This repo includes all learning from Namaste React
 2. LinkedIn Class - 3.26
 3. Resume, Interview, Salary Negotiation - 3.35
 
-13 & bonus extra: 43:04 hrs
+14 & bonus extra: 46:59 hrs
