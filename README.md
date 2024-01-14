@@ -149,11 +149,15 @@ This repo includes all learning from Namaste React
 6. navigate, useNavigate
 7. Using diff firebase APIs to show name, url etc
 
-
+### Episode 15 NetflixGPT - The core 3.36
+1. Bug fixes and code refinement
+2. TMDB - Movie database
+3. Strict mode
+4. Using more TMDB APIs; Refining UI
 
 ### Bonus Extra - 13.10
 1. Personal Branding - 3.09
 2. LinkedIn Class - 3.26
 3. Resume, Interview, Salary Negotiation - 3.35
 
-14 & bonus extra: 46:59 hrs
+15 & bonus extra: 54:11 hrs
