@@ -155,9 +155,15 @@ This repo includes all learning from Namaste React
 3. Strict mode
 4. Using more TMDB APIs; Refining UI
 
+### Episode 16 NetflixGPT - Wrapping Up 4.04
+1. Search and Multi-lingual support
+2. Adding GPT
+3. OpenAI
+
+
 ### Bonus Extra - 13.10
 1. Personal Branding - 3.09
 2. LinkedIn Class - 3.26
 3. Resume, Interview, Salary Negotiation - 3.35
 
-15 & bonus extra: 54:11 hrs
+16 & bonus extra: 58:15 hrs
